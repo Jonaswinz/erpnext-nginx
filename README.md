@@ -36,3 +36,10 @@ Here is an example nginx reverse proxy configuration:
     
 The erpnext-nginx container must be in the same network as the reverse proxy. In my case "proxy-default". 
 The containers files, will directly mounted to the folder. All folder except mysqlconf and files need to be 777 accessable. mysqlconf only 775, because MariaDB doesnt like full access.
+
+    <SITENAME>
+    <MYSQL_ROOT_PASSWORD>
+    <ADMIN_PASSWORD>
+    
+need to be replaced.
+
